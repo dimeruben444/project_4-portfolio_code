@@ -1,0 +1,117 @@
+@use "variables" as *;
+
+
+// RESPONSIVE BREAK-POINTS
+
+@mixin breakpoint($bp) {
+
+    @if $bp == tablet{
+        @media (min-width: $bp-tablet){
+            @content;
+        }
+    }
+
+    @if $bp == tablethorizontal{
+        @media (min-width: $bp-tablet-horizontal){
+            @content;
+        }
+    }
+
+    @if $bp == desktop{
+        @media (min-width: $bp-desktop){
+            @content;
+        }
+    }
+
+    @if $bp == desktopm{
+        @media (min-width: $bp-desktop-m){
+            @content;
+        }
+    }
+    @if $bp == desktopl{
+        @media (min-width: $bp-desktop-l){
+            @content;
+        }
+    }
+
+    @if $bp == desktopxl{
+        @media (min-width: $bp-desktop-xl){
+            @content;
+        }
+    }
+}
+
+@mixin font-variant($size) {
+
+  //  MOBILE 
+  @if $size == xl {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.14px;
+  }
+
+  @else if $size == l {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  @else if $size == m {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  @else if $size == s {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  //  TABLET 
+  @media (min-width: $bp-tablet) {
+    @if $size == xl {
+      font-size: $xl-font;
+      line-height: $xl-line;
+      letter-spacing: $xl-spacing;
+    }
+
+    @else if $size == l {
+      font-size: $l-font;
+      line-height: $l-line;
+      letter-spacing: $l-spacing;
+    }
+
+    @else if $size == m {
+      font-size: $m-font;
+      line-height: $m-line;
+    }
+
+    @else if $size == s {
+      font-size: $s-font;
+      line-height: $s-line;
+    }
+  }
+
+  //  DESKTOP 
+  @media (min-width: $bp-desktop) {
+    @if $size == xl {
+      font-size: $xl-font;
+      line-height: $xl-line;
+      letter-spacing: $xl-spacing;
+    }
+
+    @else if $size == l {
+      font-size: $l-font;
+      line-height: $l-line;
+      letter-spacing: $l-spacing;
+    }
+
+    @else if $size == m {
+      font-size: $m-font;
+      line-height: $m-line;
+    }
+
+    @else if $size == s {
+      font-size: $s-font;
+      line-height: $s-line;
+    }
+  }
+}

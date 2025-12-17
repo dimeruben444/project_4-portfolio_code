@@ -1,0 +1,15 @@
+@use "../abstracts/index" as *;
+
+
+section.hero{
+    
+
+    figure{
+        margin: 0;
+        display: inline-block;
+        img{
+            max-width: 50vw;
+        }
+    } 
+    
+}

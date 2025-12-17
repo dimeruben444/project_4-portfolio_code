@@ -1,0 +1,45 @@
+@use "../abstracts/index" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+p {
+  margin: 0 0 1em 0;
+}
+
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../assets/fonts/SpaceGrotesk-medium.eot');
+    src: url('../../assets/fonts/SpaceGrotesk-medium.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/SpaceGrotesk-medium.woff2') format('woff2'),
+         url('../../assets/fonts/SpaceGrotesk-medium.woff') format('woff'),
+         url('../../assets/fonts/SpaceGrotesk-medium.ttf') format('truetype'),
+         url('../../assets/fonts/SpaceGrotesk-medium.svg#SpaceGrotesk-Light') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../assets/fonts/SpaceGrotesk-bold.eot');
+    src: url('../../assets/fonts/SpaceGrotesk-bold.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/SpaceGrotesk-bold.woff2') format('woff2'),
+         url('../../assets/fonts/SpaceGrotesk-bold.woff') format('woff'),
+         url('../../assets/fonts/SpaceGrotesk-bold.ttf') format('truetype'),
+         url('../../assets/fonts/SpaceGrotesk-bold.svg#SpaceGrotesk-Light') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+

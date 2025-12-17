@@ -1,0 +1,36 @@
+@use "../abstracts/index" as *;
+
+
+
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  
+  
+  
+  nav{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.3333vw;
+    
+    
+    
+
+    a.logo img{
+      
+    }
+
+    ul{
+      display: flex;
+      gap: 25.6px;
+    }
+  }
+
+  
+}
+
+
