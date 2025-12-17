@@ -115,3 +115,15 @@
     }
   }
 }
+
+@mixin btn{
+  border-bottom: 2px solid $btn-color;
+  padding-bottom: 10px;
+  color: $white-color;
+  @include font-variant(s);
+  letter-spacing: 2.26px;
+  &:hover{
+    color: $btn-color;
+  }
+
+}

@@ -1,6 +1,98 @@
 @use "../abstracts/index" as *;
 
 footer {
-  padding: 1em;
+  
   text-align: center;
+  background-color: $gray-color;
+
+  .form{
+    padding-top: 3.75rem;
+
+    div{    //FORM TITLE & DESCRIP
+      margin-bottom: 3.125rem;
+      
+      h2{
+        @include font-variant(l);
+        color: white;
+        font-weight: bold;
+        margin-bottom: 1.25rem;
+      }
+
+      p{
+        @include font-variant(s);
+        color: $lightgray-color;
+        margin-bottom: 0;
+      }
+    }
+
+    form{
+      padding-bottom: 5.5rem;
+      border-bottom: 2px solid $lightgray-color;
+      input{
+        background-color: $gray-color; 
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font: inherit;     
+        color: inherit;    
+        box-sizing: border-box;
+        border-bottom: 2px solid $lightgray-color;
+        color: $lightgray-color;
+        display: block;
+        padding-left: 1.5rem ;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+
+        &:last-of-type{
+          padding-bottom: 5rem;
+        }
+      }
+      button{
+        @include btn;
+        background-color: $gray-color; 
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background: none;
+        outline: none;
+        font: inherit;     
+        color: inherit;    
+        box-sizing: border-box;
+        color: $white-color;
+        display: block;
+        margin-left: auto;
+
+      }
+    }
+  }
+  
+  .footer__nav{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.5rem;
+  padding-bottom: 5rem;
+  
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.3333vw;
+
+    ul{
+      display: flex;
+      gap: 25.6px;
+    }
+  }
+    
+
+    
+    
+    
+  }
+
+  
 }

@@ -1,0 +1,52 @@
+@use "../abstracts/index" as *;
+
+.projects{
+
+  .projects__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    
+    h2{
+      @include font-variant(xl);
+      color: white;
+      font-weight: 600;
+    }
+
+    .btn{
+      @include btn;
+    }
+  }
+
+  article{
+    margin-bottom: 2.5rem;
+    img{
+      display: block;   
+      max-width: 100%;      
+      height: auto; 
+      margin-bottom: 1.25rem;
+    }
+    h3{
+      @include font-variant(m);
+      color: $white-color;
+      margin-bottom: 0.5rem;
+    }
+    .tech{
+      display: flex;
+      margin-bottom: 1.25rem;
+      color: $bone-color;
+      gap: 1rem;
+      p{
+        margin: 0;
+      }
+    }
+    .buttons{
+      display: flex;
+      gap: 1.5rem;
+      a{
+        @include btn
+      }
+    }
+  }
+
+}
