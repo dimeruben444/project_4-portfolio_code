@@ -5,8 +5,15 @@ footer {
   text-align: center;
   background-color: $gray-color;
 
+  
   .form{
     padding-top: 3.75rem;
+
+    @include breakpoint(tablet){
+      max-width: 62%;
+      margin: auto ;
+    }
+
 
     div{    //FORM TITLE & DESCRIP
       margin-bottom: 3.125rem;
@@ -28,6 +35,9 @@ footer {
     form{
       padding-bottom: 5.5rem;
       border-bottom: 2px solid $lightgray-color;
+      @include breakpoint(tablet){
+        border-bottom: none;
+      }
       input{
         background-color: $gray-color; 
         border: none;
@@ -75,6 +85,21 @@ footer {
   transform: translateX(-50%);
   margin-top: 2.5rem;
   padding-bottom: 5rem;
+  @include breakpoint(tablet){
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 768px;      
+    margin-left: auto;     
+    margin-right: auto;    
+    padding-left: 1.875rem;    
+    padding-right: 1.875rem;
+    padding-bottom: 2.5rem;
+    margin-top: 0;
+    
+    
+
+  }
   
   nav{
     display: flex;
@@ -82,17 +107,31 @@ footer {
     align-items: center;
     margin-top: 5.3333vw;
 
+    @include breakpoint(tablet){
+      flex-direction: row;
+      justify-content: space-between;
+      border-top: 2px solid $lightgray-color;
+      padding-top: 2.5rem;
+      margin-top: 0;
+      
+
+      & a.logo img{
+        width: 11rem;  
+      }
+    }
+
     ul{
       display: flex;
       gap: 25.6px;
+
+      @include breakpoint(tablet){
+        li a img{
+          width: 1.55rem;
+        }
+
+      }
     }
-  }
-    
-
-    
-    
+  } 
     
   }
-
-  
 }

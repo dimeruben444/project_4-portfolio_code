@@ -68,50 +68,50 @@
   //  TABLET 
   @media (min-width: $bp-tablet) {
     @if $size == xl {
-      font-size: $xl-font;
-      line-height: $xl-line;
-      letter-spacing: $xl-spacing;
+      font-size: calc(#{$xl-font} - 16px);
+      line-height: calc(#{$xl-line} - 16px);
+      letter-spacing:calc(#{$xl-spacing} + 0.45px) ;
     }
 
     @else if $size == l {
-      font-size: $l-font;
-      line-height: $l-line;
-      letter-spacing: $l-spacing;
+      font-size: calc(#{$l-font} );
+      line-height: calc(#{$l-line} );
+      letter-spacing:calc(#{$l-spacing}) ;
     }
 
     @else if $size == m {
-      font-size: $m-font;
-      line-height: $m-line;
+      font-size: calc(#{$s-font} - 4px);
+      line-height: calc(#{$s-line} );
     }
 
     @else if $size == s {
-      font-size: $s-font;
-      line-height: $s-line;
+      font-size: calc(#{$s-font} - 10px);
+      line-height: calc(#{$s-line} );
     }
   }
 
   //  DESKTOP 
   @media (min-width: $bp-desktop) {
     @if $size == xl {
-      font-size: $xl-font;
-      line-height: $xl-line;
-      letter-spacing: $xl-spacing;
+      font-size: calc(#{$xl-font} - 1px);
+      line-height: calc(#{$xl-line} - 1px);
+      letter-spacing:calc(#{$xl-spacing} + 0.45px) ;
     }
 
     @else if $size == l {
-      font-size: $l-font;
-      line-height: $l-line;
-      letter-spacing: $l-spacing;
+      font-size: calc(#{$l-font} );
+      line-height: calc(#{$l-line} );
+      letter-spacing:calc(#{$l-spacing}) ;
     }
 
     @else if $size == m {
-      font-size: $m-font;
-      line-height: $m-line;
+      font-size: calc(#{$s-font} - 4px);
+      line-height: calc(#{$s-line} );
     }
 
     @else if $size == s {
-      font-size: $s-font;
-      line-height: $s-line;
+      font-size: calc(#{$s-font} - 7px);
+      line-height: calc(#{$s-line} );
     }
   }
 }
@@ -125,5 +125,7 @@
   &:hover{
     color: $btn-color;
   }
+
+ 
 
 }
