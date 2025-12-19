@@ -39,22 +39,27 @@
 
   article{
     margin-bottom: 2.5rem;
-    img{
-      display: block;   
-      max-width: 100%;      
-      height: auto; 
-      margin-bottom: 1.25rem;
-      @include breakpoint(desktop){
+
+    @include breakpoint(desktop){
+      margin-bottom: -4rem;
         &:hover{
-          filter: brightness(44%);
+          img{
+            filter: brightness(44%);
+          }
         }
-        &:hover ~ div.buttons{
+        &:hover  div.buttons{
           opacity: 1;
           z-index: 2;
             
         }
         
       }
+    img{
+      display: block;   
+      max-width: 100%;      
+      height: auto; 
+      margin-bottom: 1.25rem;
+      
     }
     h3{
       @include font-variant(m);
@@ -73,6 +78,7 @@
     .buttons{
       display: flex;
       gap: 1.5rem;
+
       a{
         @include btn;
         font-size:1rem;

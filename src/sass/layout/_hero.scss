@@ -2,6 +2,7 @@
 
 // HERO STYLES
 section.hero{
+    
     margin-bottom: 5rem;
     @include breakpoint(tablet){
         max-width: 58vw;
@@ -20,6 +21,7 @@ section.hero{
     figure{
         margin: 0;
         display: flex;
+        margin-bottom: 2.5rem;
         @include breakpoint(tablet){
             position: absolute;
             top: -6.875rem;
@@ -165,6 +167,9 @@ section.hero{
         text-align: center;
         color: $white-color;
         margin-bottom: 1.5rem;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
         @include breakpoint(tablet){
             text-align: start;
             margin-bottom: 2rem;

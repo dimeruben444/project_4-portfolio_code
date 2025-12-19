@@ -33,14 +33,39 @@ header {
     ul{
       display: flex;
       gap: 25.6px;
+
+      li a{
+          color: $white-color;
+        }
+        li a:hover{
+          color: $btn-color;
+        }
       @include breakpoint(tablet){
-        li a img{
-          width: 1.55rem;
+        li a {
+          font-size: 1.5rem;
+          color: $white-color;
+        }
+        li a:hover{
+          color: $btn-color;
         }
 
       }
+
       @include breakpoint(desktop){
         padding-right: 1.875rem;
+        font-size: 1.5rem;
+        position: relative;
+        z-index: 2;
+
+        li a{
+          color: $white-color;
+        }
+        li a:hover{
+          color: $btn-color;
+        }
+        
+        
+        
       }
     }
   }

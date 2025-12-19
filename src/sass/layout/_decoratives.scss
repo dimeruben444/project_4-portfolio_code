@@ -1,0 +1,131 @@
+@use "../abstracts/index" as *;
+
+.decorative1{
+    background-image: url(../../../img/decoration-oval-l.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none; 
+    width: 45vw;
+    height: 45vw;
+    top: 40vw;
+    left: 0;
+    z-index: -2;
+
+    @include breakpoint(tablet){
+        background-image: url(../../../img/decoration-oval-lt.svg);
+        width:  35vw;
+        height: 35vw;
+        top:    15vw;
+        left:    0;
+        z-index:-2;
+
+    }
+
+    @include breakpoint(desktop){
+        background-image: url(../../../img/decoration-oval-ld.svg);
+        width:  30vw;
+        height: 30vw;
+        top:    12vw;
+        left:    0vw;
+        z-index:-2;
+
+    }
+}
+
+.decorative2{
+    background-image: url(../../../img/decoration-semicircle.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none; 
+    width: 30vw;
+    height: 30vw;
+    top: 75vw;
+    right: -15vw;
+    z-index: -2;
+
+    @include breakpoint(tablet){
+        width:  18vw;
+        height: 18vw;
+        top:    65vw;
+        right:  -9vw;
+        z-index: 1;
+
+    }
+
+    @include breakpoint(desktop){
+        background-image: url(../../../img/decoration-circle.svg);
+        width:  10vw;
+        height: 10vw;
+        top:    42vw;
+        right:  37vw;
+        z-index: 1;
+
+    }
+}
+
+.decorative3{
+    background-image: url(../../../img/decoration-oval-r.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none; 
+    width: 58vw;
+    height: 58vw;
+    top: 355vw;
+    right: -5vw;
+    z-index: -2;
+
+    @include breakpoint(tablet){
+        background-image: url(../../../img/decoration-oval-rt.svg);
+        width: 38vw;
+        height: 38vw;
+        top: 140vw;
+        right: -15vw;
+        z-index: -2;
+
+    }
+
+    @include breakpoint(tablet){
+        background-image: url(../../../img/decoration-oval-rt.svg);
+        width: 22vw;
+        height: 22vw;
+        top: 78vw;
+        right: 0vw;
+        z-index: -2;
+
+    }
+}
+
+.decorative4{
+    background-image: url(../../../img/decoration-oval-l.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none; 
+    width: 45vw;
+    height: 45vw;
+    top: 120vw;
+    left: 0;
+    z-index: 1;
+
+    @include breakpoint(tablet){
+        background-image: url(../../../img/decoration-oval-lt.svg);
+        width: 38vw;
+        height: 38vw;
+        top: 68vw;
+        left: -15vw;
+        z-index: 1;
+
+    }
+    @include breakpoint(tablet){
+        background-image: url(../../../img/decoration-oval-ld.svg);
+        width: 25vw;
+        height: 25vw;
+        top: 22vw;
+        left: -5vw;
+        z-index: 1;
+
+    }
+}

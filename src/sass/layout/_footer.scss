@@ -13,22 +13,40 @@ footer {
       max-width: 62%;
       margin: auto ;
     }
+    @include breakpoint(desktop){
+      max-width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 220px;
+      padding-top: 5.25rem;
+    }
 
 
     div{    //FORM TITLE & DESCRIP
       margin-bottom: 3.125rem;
+      @include breakpoint(desktop){
+        text-align: start;
+      }
       
       h2{
         @include font-variant(l);
         color: white;
         font-weight: bold;
         margin-bottom: 1.25rem;
+        @include breakpoint(desktop){
+         @include font-variant(xl)
+        }
       }
 
       p{
         @include font-variant(s);
         color: $lightgray-color;
         margin-bottom: 0;
+
+        @include breakpoint(desktop){
+         font-size: 1.16rem;
+        }
       }
     }
 
@@ -38,6 +56,7 @@ footer {
       @include breakpoint(tablet){
         border-bottom: none;
       }
+      
       input{
         background-color: $gray-color; 
         border: none;
@@ -58,6 +77,24 @@ footer {
 
         &:last-of-type{
           padding-bottom: 5rem;
+        }
+
+        @include breakpoint(desktop){
+          position: relative;
+          
+          &:not(:placeholder-shown) {
+            border-bottom: 2px solid $btn-color;
+          }
+
+          &[type="email"]:valid {
+            border-bottom: 2px solid $btn-color;
+          }
+
+          &[type="email"]:not(:placeholder-shown):invalid {
+            border-bottom: 2px solid red;
+            
+          }
+
         }
       }
       button{
@@ -100,6 +137,22 @@ footer {
     
 
   }
+
+  @include breakpoint(desktop){
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 1440px;      
+    margin-left: auto;     
+    margin-right: auto;    
+    padding-left: 10.3125rem;    
+    padding-right: 10.3125rem;
+    padding-bottom: 2.5rem;
+    margin-top: 0;
+    
+    
+
+  }
   
   nav{
     display: flex;
@@ -124,11 +177,30 @@ footer {
       display: flex;
       gap: 25.6px;
 
-      @include breakpoint(tablet){
-        li a img{
-          width: 1.55rem;
+      li a{
+          color: $white-color;
+        }
+        li a:hover{
+          color: $btn-color;
         }
 
+      @include breakpoint(tablet){
+        li a span{
+          font-size: 1.5rem;
+          color: $white-color;
+        }
+        li a:hover{
+          color: $btn-color;
+        }
+      }
+      @include breakpoint(desktop){
+        font-size: 1.5rem;
+        li a{
+          color: $white-color;
+        }
+        li a:hover{
+          color: $btn-color;
+        }
       }
     }
   } 
